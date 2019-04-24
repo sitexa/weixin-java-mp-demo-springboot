@@ -1,0 +1,7 @@
+wx:
+  mp:
+    configs:
+      - appId: wx6b298e5c0efa6777
+        secret: 9b2883d895505fbebb3e36e9eeea07cb
+        token: sitexa
+        aesKey: yf61CX8CMSNEiFcjKuDZ5RA9LlJf4ggY1KS62Tz2O4j

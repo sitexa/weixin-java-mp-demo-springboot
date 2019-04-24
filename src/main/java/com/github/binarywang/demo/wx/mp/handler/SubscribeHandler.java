@@ -51,7 +51,12 @@ public class SubscribeHandler extends AbstractHandler {
         }
 
         try {
-            return new TextBuilder().build("感谢关注", wxMessage, weixinService);
+            StringBuffer content = new StringBuffer();
+            content.append("感谢关注社的家！\n");
+            content.append("输入1查看文章列表;\n");
+            content.append("输入2查看商品列表;\n");
+            content.append("输入3获取彩蛋。\n");
+            return new TextBuilder().build(content.toString(), wxMessage, weixinService);
         } catch (Exception e) {
             this.logger.error(e.getMessage(), e);
         }

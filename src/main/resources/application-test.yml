@@ -1,0 +1,9 @@
+wx:
+  mp:
+    configs:
+      - appId: wxa45d9554beeb329c
+        secret: faa54f4ea412e9544d86cabb1a9e11b9
+        token: sitexa
+        aesKey:
+server:
+    port: 18080

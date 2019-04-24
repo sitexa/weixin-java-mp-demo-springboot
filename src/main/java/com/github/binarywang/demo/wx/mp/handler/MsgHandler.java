@@ -1,7 +1,6 @@
 package com.github.binarywang.demo.wx.mp.handler;
 
 import com.github.binarywang.demo.wx.mp.builder.TextBuilder;
-import com.github.binarywang.demo.wx.mp.utils.JsonUtils;
 import me.chanjar.weixin.common.error.WxErrorException;
 import me.chanjar.weixin.common.session.WxSessionManager;
 import me.chanjar.weixin.mp.api.WxMpService;
@@ -38,12 +37,29 @@ public class MsgHandler extends AbstractHandler {
                     .fromUser(wxMessage.getToUser())
                     .toUser(wxMessage.getFromUser()).build();
             }
+
+            if (StringUtils.startsWithAny(wxMessage.getContent(), "1")) {
+                StringBuffer content = new StringBuffer();
+                content.append("文章列表:\n");
+                content.append("1,<a href='http://www.sitexa.net/post/blockchain-analyst/'>区块链：理想还是梦幻</a>\n");
+                content.append("2,<a href='https://www.zhihu.com/question/268216396/answer/661250212'>30岁以上的程序员该何去何从？</a>\n");
+                return new TextBuilder().build(content.toString(), wxMessage, weixinService);
+            } else if (StringUtils.startsWithAny(wxMessage.getContent(), "2")) {
+                return new TextBuilder().build("课程列表", wxMessage, weixinService);
+            } else if (StringUtils.startsWithAny(wxMessage.getContent(), "3","4","5","6","7","8","9")) {
+                return new TextBuilder().build("彩蛋来也", wxMessage, weixinService);
+            }else{
+                return new TextBuilder().build("感谢关注，敬请期待！",wxMessage,weixinService);
+            }
+
+
         } catch (WxErrorException e) {
             e.printStackTrace();
         }
 
         //TODO 组装回复消息
-        String content = "收到信息内容：" + JsonUtils.toJson(wxMessage);
+        //String content = "收到信息内容：" + JsonUtils.toJson(wxMessage);
+        String content = "收到信息内容：" + wxMessage.getContent();
 
         return new TextBuilder().build(content, wxMessage, weixinService);
 

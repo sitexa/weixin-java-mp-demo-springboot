@@ -14,18 +14,19 @@
     <artifactId>weixin-java-mp-demo-springboot</artifactId>
     <packaging>jar</packaging>
 
-    <name>Wechat mp demo with Spring Boot and WxJava </name>
+    <name>Wechat mp demo with Spring Boot and WxJava</name>
     <description>基于 WxJava 和 Spring Boot 实现的微信公众号后端开发演示项目</description>
 
     <properties>
         <weixin-java-mp.version>3.3.8.B</weixin-java-mp.version>
-
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.locales>zh_CN</project.build.locales>
-        <docker.image.prefix>wechat-mp-demo</docker.image.prefix>
+        <docker.image.prefix>wechat-mp</docker.image.prefix>
+        <baomidou.version>3.0.6</baomidou.version>
+        <druid.version>1.1.10</druid.version>
     </properties>
 
     <dependencies>
@@ -79,6 +80,23 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <!--<scope>runtime</scope>-->
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${baomidou.version}</version>
         </dependency>
     </dependencies>
 

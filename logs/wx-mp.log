@@ -1,0 +1,138 @@
+2019-04-25 01:49:40.927  INFO 21594 --- [main] com.sitexa.wx.mp.WxMpDemoApplication     : Starting WxMpDemoApplication v1.0.0-SNAPSHOT on MacOS.lan with PID 21594 (/Users/open/IdeaProjects/weixin-java-mp-demo-springboot/target/weixin-java-mp-demo-springboot-1.0.0-SNAPSHOT.jar started by open in /Users/open/IdeaProjects/weixin-java-mp-demo-springboot)
+2019-04-25 01:49:40.930 DEBUG 21594 --- [main] com.sitexa.wx.mp.WxMpDemoApplication     : Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2019-04-25 01:49:40.931  INFO 21594 --- [main] com.sitexa.wx.mp.WxMpDemoApplication     : The following profiles are active: prod
+2019-04-25 01:49:41.033  INFO 21594 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7cf10a6f: startup date [Thu Apr 25 01:49:41 CST 2019]; root of context hierarchy
+2019-04-25 01:49:41.992  WARN 21594 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.sitexa.wx.mp]' package. Please check your configuration.
+2019-04-25 01:49:43.117  INFO 21594 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
+2019-04-25 01:49:43.181  INFO 21594 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-25 01:49:43.183  INFO 21594 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-04-25 01:49:43.201  INFO 21594 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/open/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-25 01:49:43.330  INFO 21594 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-25 01:49:43.331  INFO 21594 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2298 ms
+2019-04-25 01:49:43.505  INFO 21594 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-04-25 01:49:43.507  INFO 21594 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2019-04-25 01:49:43.512  INFO 21594 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-25 01:49:43.513  INFO 21594 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-25 01:49:43.514  INFO 21594 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-25 01:49:43.514  INFO 21594 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-25 01:49:43.515  INFO 21594 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-04-25 01:49:44.425  INFO 21594 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-25 01:49:44.603  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7cf10a6f: startup date [Thu Apr 25 01:49:41 CST 2019]; root of context hierarchy
+2019-04-25 01:49:44.737  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx/portal/{appid}],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public java.lang.String com.sitexa.wx.mp.controller.WxPortalController.post(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-04-25 01:49:44.739  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx/portal/{appid}],methods=[GET],produces=[text/plain;charset=utf-8]}" onto public java.lang.String com.sitexa.wx.mp.controller.WxPortalController.authGet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2019-04-25 01:49:44.744  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx/menu/{appid}/create],methods=[POST]}" onto public java.lang.String com.sitexa.wx.mp.controller.WxMenuController.menuCreate(java.lang.String,me.chanjar.weixin.common.bean.menu.WxMenu) throws me.chanjar.weixin.common.error.WxErrorException
+2019-04-25 01:49:44.745  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx/menu/{appid}/createByJson],methods=[POST]}" onto public java.lang.String com.sitexa.wx.mp.controller.WxMenuController.menuCreate(java.lang.String,java.lang.String) throws me.chanjar.weixin.common.error.WxErrorException
+2019-04-25 01:49:44.746  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx/menu/{appid}/create],methods=[GET]}" onto public java.lang.String com.sitexa.wx.mp.controller.WxMenuController.menuCreateSample(java.lang.String) throws me.chanjar.weixin.common.error.WxErrorException,java.net.MalformedURLException
+2019-04-25 01:49:44.747  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx/menu/{appid}/delete/{menuId}],methods=[GET]}" onto public void com.sitexa.wx.mp.controller.WxMenuController.menuDelete(java.lang.String,java.lang.String) throws me.chanjar.weixin.common.error.WxErrorException
+2019-04-25 01:49:44.749  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx/menu/{appid}/delete],methods=[GET]}" onto public void com.sitexa.wx.mp.controller.WxMenuController.menuDelete(java.lang.String) throws me.chanjar.weixin.common.error.WxErrorException
+2019-04-25 01:49:44.750  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx/menu/{appid}/get],methods=[GET]}" onto public me.chanjar.weixin.mp.bean.menu.WxMpMenu com.sitexa.wx.mp.controller.WxMenuController.menuGet(java.lang.String) throws me.chanjar.weixin.common.error.WxErrorException
+2019-04-25 01:49:44.752  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx/menu/{appid}/menuTryMatch/{userid}],methods=[GET]}" onto public me.chanjar.weixin.common.bean.menu.WxMenu com.sitexa.wx.mp.controller.WxMenuController.menuTryMatch(java.lang.String,java.lang.String) throws me.chanjar.weixin.common.error.WxErrorException
+2019-04-25 01:49:44.753  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx/menu/{appid}/getSelfMenuInfo],methods=[GET]}" onto public me.chanjar.weixin.mp.bean.menu.WxMpGetSelfMenuInfoResult com.sitexa.wx.mp.controller.WxMenuController.getSelfMenuInfo(java.lang.String) throws me.chanjar.weixin.common.error.WxErrorException
+2019-04-25 01:49:44.754  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error/404],methods=[GET]}" onto public java.lang.String com.sitexa.wx.mp.error.ErrorController.error404()
+2019-04-25 01:49:44.755  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error/500],methods=[GET]}" onto public java.lang.String com.sitexa.wx.mp.error.ErrorController.error500()
+2019-04-25 01:49:44.756  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx/redirect/{appid}/greet]}" onto public java.lang.String com.sitexa.wx.mp.controller.WxRedirectController.greetUser(java.lang.String,java.lang.String,org.springframework.ui.ModelMap)
+2019-04-25 01:49:44.766  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-25 01:49:44.768  INFO 21594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-25 01:49:44.843  INFO 21594 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-25 01:49:44.844  INFO 21594 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-25 01:49:45.131  INFO 21594 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-04-25 01:49:45.318 ERROR 21594 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} init error
+
+java.sql.SQLException: com.mysql.cj.jdbc.Driver
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:600) ~[druid-1.1.10.jar!/:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:817) ~[druid-1.1.10.jar!/:1.1.10]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1824) [spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1767) [spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695) [spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) [spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) [spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759) ~[spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at com.sitexa.wx.mp.WxMpDemoApplication.main(WxMpDemoApplication.java:13) ~[classes!/:1.0.0-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[weixin-java-mp-demo-springboot-1.0.0-SNAPSHOT.jar:1.0.0-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[weixin-java-mp-demo-springboot-1.0.0-SNAPSHOT.jar:1.0.0-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[weixin-java-mp-demo-springboot-1.0.0-SNAPSHOT.jar:1.0.0-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[weixin-java-mp-demo-springboot-1.0.0-SNAPSHOT.jar:1.0.0-SNAPSHOT]
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[weixin-java-mp-demo-springboot-1.0.0-SNAPSHOT.jar:1.0.0-SNAPSHOT]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_192]
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:598) ~[druid-1.1.10.jar!/:1.1.10]
+	... 32 common frames omitted
+
+2019-04-25 01:49:45.322  WARN 21594 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLException: com.mysql.cj.jdbc.Driver
+2019-04-25 01:49:45.329  INFO 21594 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-04-25 01:49:45.352  INFO 21594 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-25 01:49:45.354 ERROR 21594 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is java.sql.SQLException: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699) ~[spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759) ~[spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) [spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) [spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258) [spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246) [spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at com.sitexa.wx.mp.WxMpDemoApplication.main(WxMpDemoApplication.java:13) [classes!/:1.0.0-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) [weixin-java-mp-demo-springboot-1.0.0-SNAPSHOT.jar:1.0.0-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) [weixin-java-mp-demo-springboot-1.0.0-SNAPSHOT.jar:1.0.0-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) [weixin-java-mp-demo-springboot-1.0.0-SNAPSHOT.jar:1.0.0-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) [weixin-java-mp-demo-springboot-1.0.0-SNAPSHOT.jar:1.0.0-SNAPSHOT]
+Caused by: java.sql.SQLException: com.mysql.cj.jdbc.Driver
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:600) ~[druid-1.1.10.jar!/:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:817) ~[druid-1.1.10.jar!/:1.1.10]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1824) ~[spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1767) ~[spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695) ~[spring-beans-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[weixin-java-mp-demo-springboot-1.0.0-SNAPSHOT.jar:1.0.0-SNAPSHOT]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_192]
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:598) ~[druid-1.1.10.jar!/:1.1.10]
+	... 32 common frames omitted
+
